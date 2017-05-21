@@ -1,5 +1,5 @@
-import tk
-from event import event, eventSource
+from . import tk
+from .event import event, eventSource
 
 @eventSource
 class Entry(object):

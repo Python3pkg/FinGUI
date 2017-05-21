@@ -8,7 +8,7 @@ def camelPrefix(prefix, original):
 
 def eventSource(cls):
     methodsToAdd = {}
-    for name, method in cls.__dict__.iteritems():
+    for name, method in cls.__dict__.items():
         if not getattr(method, 'bindable', False):
             continue
         # Create another method and add it to the class.
@@ -17,7 +17,7 @@ def eventSource(cls):
         bindMethod.name = name
         methodsToAdd[camelPrefix('bind', name)] = bindMethod
         delattr(method, 'bindable')
-    for name, method in methodsToAdd.iteritems():
+    for name, method in methodsToAdd.items():
         setattr(cls, name, method)
     return cls
 

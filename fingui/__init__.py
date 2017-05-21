@@ -1,8 +1,8 @@
-from entry       import Entry
-from label       import Label
-from menu        import Menu
-from popup       import Popup
-from progressbar import ProgressBar
+from .entry       import Entry
+from .label       import Label
+from .menu        import Menu
+from .popup       import Popup
+from .progressbar import ProgressBar
 
 import sys
 
@@ -21,7 +21,7 @@ def _setupMainloop():
 
     def tkloop():
         if _setupMainloop.shouldTkloop:
-            from tk import mainloop
+            from .tk import mainloop
             try:
                 mainloop()
             except AttributeError:

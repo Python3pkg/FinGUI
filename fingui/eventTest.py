@@ -1,5 +1,5 @@
 from unittest import main, TestCase
-from entry    import Entry
+from .entry    import Entry
 
 class TestEvent(TestCase):
     def testDelegate(self):

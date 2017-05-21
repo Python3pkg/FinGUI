@@ -1,4 +1,4 @@
-import tk
+from . import tk
 
 class Popup(tk.Toplevel):
     '''

@@ -1,4 +1,4 @@
-import tk
+from . import tk
 
 class Label(tk.Label):
     def __init__(self, *args, **kwargs):

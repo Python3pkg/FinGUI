@@ -1,6 +1,6 @@
-import tk
-from event import event, eventSource
-from popup import Popup
+from . import tk
+from .event import event, eventSource
+from .popup import Popup
 
 # Someday:
 # 1 - Add padding all around.
